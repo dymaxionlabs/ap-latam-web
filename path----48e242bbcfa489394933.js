@@ -1,0 +1,2 @@
+webpackJsonp([60335399758886],{120:function(a,t){a.exports={data:{site:{siteMetadata:{name:"AP Latam",title:"Mapa de potenciales villas y asentamientos"}}},layoutContext:{}}}});
+//# sourceMappingURL=path----48e242bbcfa489394933.js.map
