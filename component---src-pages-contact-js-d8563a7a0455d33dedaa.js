@@ -1,2 +1,0 @@
-webpackJsonp([70144966829960],{268:function(e,t,a){"use strict";function l(e){return e&&e.__esModule?e:{default:e}}t.__esModule=!0;var n=a(1),u=l(n),c=a(55),d=l(c),r=function(){return u.default.createElement("div",null,u.default.createElement("div",{className:"container"},u.default.createElement("h1",{className:"title"},"Contacto"),u.default.createElement("div",{className:"content"})),u.default.createElement(d.default,null))};t.default=r,e.exports=t.default}});
-//# sourceMappingURL=component---src-pages-contact-js-d8563a7a0455d33dedaa.js.map
