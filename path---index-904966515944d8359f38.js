@@ -1,2 +1,2 @@
-webpackJsonp([0x81b8806e4260],{761:function(e,a){e.exports={data:{site:{siteMetadata:{languages:{defaultLangKey:"en",langs:["en","es"]}}}},pathContext:{slug:"/",langKey:"es"}}}});
+webpackJsonp([0x81b8806e4260],{762:function(e,a){e.exports={data:{site:{siteMetadata:{languages:{defaultLangKey:"en",langs:["en","es"]}}}},pathContext:{slug:"/",langKey:"es"}}}});
 //# sourceMappingURL=path---index-904966515944d8359f38.js.map
