@@ -2,7 +2,7 @@ const languages = require('./src/data/languages')
 const press = require('./src/data/press')
 
 module.exports = {
-  pathPrefix: '/ap-latam-web',
+  pathPrefix: '/',
   siteMetadata: {
     name: 'AP Latam',
     title: 'Monitor de potenciales asentamientos informales y barrios precarios',
