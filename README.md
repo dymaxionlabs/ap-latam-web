@@ -26,7 +26,7 @@ The map view uses a Mapbox style to show datasets via vector tiles. If you add
 a new city, or update datasets, you should update the Mapbox dataset.
 
 ```
-geojson-merge data/**/latest.geojson > /tmp/ap-latem.geojson
+geojson-merge $(for f in data/*/; do echo $f$(ls -1r $f | head -1); done | xargs) > /tmp/ap-latam.geojson
 tippecanoe -o /tmp/ap-latam.mbtiles -zg --drop-densest-as-needed /tmp/ap-latam.geojson
 mapbox upload $USER.ap-latam /tmp/ap-latam.mbtiles --access-token $TOKEN
 ```
