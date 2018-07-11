@@ -1,9 +1,9 @@
 [
    {
-      "internalId": "argentina-buenos-aires",
+      "internalId": "argentina-buenos_aires",
       "name" : "Buenos Aires",
       "country" : "Argentina",
-      "path" : "argentina",
+      "path" : "argentina-bsas",
       "center" : {
          "lat" : -34.614948,
          "lon" : -58.439854
