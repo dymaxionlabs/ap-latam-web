@@ -1,5 +1,6 @@
 import React from 'react'
 import Footer from './_footer.en'
+import { withPrefix } from 'gatsby-link'
 
 const PublicationsEnPage = () => (
   <div>
@@ -10,10 +11,19 @@ const PublicationsEnPage = () => (
           <ul className="list">
             <li>
               <p>
-                <a
-                  href="http://digital.bl.fcen.uba.ar/gsdl-282/cgi-bin/library.cgi?a=d&c=tesis&d=Tesis_6172_Bayle"
-                  target="_blank"
-                >
+                <a href={withPrefix('/docs/AP_Latam_Technical_Report_Q1.pdf')} target="_blank" >
+                  AP Latam Technical Report Q1 - July 2018
+                </a>
+              </p>
+              <p>
+                Technical report about monitoring of informal settlements,
+                applied on the Metropolitan Area of Buenos Aires, Argentina.
+                Methodology and future work.
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="http://digital.bl.fcen.uba.ar/gsdl-282/cgi-bin/library.cgi?a=d&c=tesis&d=Tesis_6172_Bayle" target="_blank">
                   Detección de villas y asentamientos informales en el partido
                   de La Matanza mediante teledetección y sistemas de información
                   geográfica
