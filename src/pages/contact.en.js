@@ -9,7 +9,7 @@ const ContactPage = () => (
         <div className="content">
           <p>
             If you have any question about our methodology or data, contact us
-            via <a href="mailto:contact@dymaxionalabs.com">e-mail</a>
+            via <a href="mailto:contact@dymaxionlabs.com">e-mail</a>
           </p>
         </div>
       </div>

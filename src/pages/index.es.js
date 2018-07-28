@@ -126,7 +126,7 @@ const IndexPage = ({ data }) => {
             <p>
               Si tiene alguna duda sobre la metodología o los datos ofrecidos,
               no dude en contactarnos por{' '}
-              <a href="mailto:contacto@dymaxionalabs.com">e-mail</a>
+              <a href="mailto:contacto@dymaxionlabs.com">e-mail</a>
             </p>
           </div>
         </div>

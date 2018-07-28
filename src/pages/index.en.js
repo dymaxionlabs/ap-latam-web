@@ -121,7 +121,7 @@ const IndexPage = ({ data }) => {
           <div className="content">
             <p>
               If you have any question about our methodology or data, contact us
-              via <a href="mailto:contacto@dymaxionalabs.com">e-mail</a>
+              via <a href="mailto:contacto@dymaxionlabs.com">e-mail</a>
             </p>
           </div>
         </div>
