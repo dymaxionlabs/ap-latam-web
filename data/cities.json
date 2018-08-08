@@ -31,16 +31,5 @@
          "lon" : -90.51367
       },
       "zoom" : 12
-   },
-   {
-      "internalId": "tegucigalpa-honduras",
-      "name" : "Tegucigalpa",
-      "country" : "Honduras",
-      "path" : "tegucigalpa-honduras",
-      "center" : {
-         "lat" : 14.08154,
-         "lon" : -87.19828
-      },
-      "zoom" : 12
    }
 ]
