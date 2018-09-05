@@ -2,7 +2,9 @@ import React from 'react'
 
 const NewsList = props => (
   <table className="table is-fullwidth">
-    {props.items.map(item => <NewsListItem key={item.url} item={item} />)}
+    <tbody>
+      {props.items.map(item => <NewsListItem key={item.url} item={item} />)}
+    </tbody>
   </table>
 )
 
