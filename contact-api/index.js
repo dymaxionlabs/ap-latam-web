@@ -11,7 +11,7 @@ const api_key  = process.env.API_KEY,
       from_who = process.env.FROM_WHO,
       to_who   = process.env.TO_WHO;
 
-const sendEmail = function sendEmail(req, res) {
+const aplatamSendEmail = function aplatamSendEmail(req, res) {
 	console.log('The body is ' + JSON.stringify(req.body));
 
   const body = req.body;
@@ -57,9 +57,9 @@ const sendEmail = function sendEmail(req, res) {
   }
 };
 
-exports.sendEmail = (req, res) => {
+exports.aplatamSendEmail = (req, res) => {
   var corsFn = cors();
   corsFn(req, res, function() {
-    sendEmail(req, res);
+    aplatamSendEmail(req, res);
   });
 };

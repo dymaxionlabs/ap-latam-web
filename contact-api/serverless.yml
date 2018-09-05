@@ -20,7 +20,7 @@ package:
 
 functions:
   aplatamSendEmail:
-    handler: sendEmail
+    handler: aplatamSendEmail
     events:
       - http: path
 
