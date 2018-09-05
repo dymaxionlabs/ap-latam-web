@@ -38,7 +38,7 @@ const NavBarBurger = props => {
 }
 
 const NavBarItem = props => (
-  <Link className="navbar-item" to={props.url}>{props.name}</Link>
+  <Link className="navbar-item" to={props.url}>{props.children}</Link>
 )
 
 const NavBarMenu = props => {

@@ -18,10 +18,10 @@ const TemplateWrapper = ({ children, data }) => (
     />
     <div>
       <NavBar prefix="/es" name={data.site.siteMetadata.name}>
-        <NavBarItem name="Mapa" url="/es/map" />
-        <NavBarItem name="Datos" url="/es/data" />
-        <NavBarItem name="Publicaciones" url="/es/publications" />
-        <NavBarItem name="Contacto" url="/es/contact" />
+        <NavBarItem url="/es/map">Mapa</NavBarItem>
+        <NavBarItem url="/es/data">Datos</NavBarItem>
+        <NavBarItem url="/es/publications">Publicaciones</NavBarItem>
+        <NavBarItem url="/es/contact">Contacto</NavBarItem>
       </NavBar>
       {children()}
     </div>
