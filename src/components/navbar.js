@@ -1,7 +1,9 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import { FaGithub } from 'react-icons/fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+
 import dymLogo from '../assets/dym-logo.png'
 
 const LanguageSelector = props => {
@@ -46,7 +48,7 @@ const NavBarGithubItem = () => (
   <div className="navbar-item">
     <p className="control">
       <a className="button is-light" title="Source code" target="_blank" href="https://github.com/dymaxionlabs/ap-latam">
-        <FaGithub />
+        <FontAwesomeIcon icon={faGithub} />
         <span style={{ marginLeft: '0.5em' }}>Código Fuente</span>
       </a>
     </p>
