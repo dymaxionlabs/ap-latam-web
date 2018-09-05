@@ -40,16 +40,16 @@ const NavBarBurger = props => {
   )
 }
 
-const NavBarItem = props => (
-  <Link className="navbar-item" to={props.url}>{props.children}</Link>
+const NavBarItem = ({ url, children }) => (
+  <Link className="navbar-item" to={url}>{children}</Link>
 )
 
-const NavBarGithubItem = () => (
+const NavBarGithubItem = ({ children }) => (
   <div className="navbar-item">
     <p className="control">
       <a className="button is-light" title="Source code" target="_blank" href="https://github.com/dymaxionlabs/ap-latam">
         <FontAwesomeIcon icon={faGithub} />
-        <span style={{ marginLeft: '0.5em' }}>Código Fuente</span>
+        <span style={{ marginLeft: '0.5em' }}>{children}</span>
       </a>
     </p>
   </div>
