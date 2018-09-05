@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import {NavBar, NavBarItem} from '../components/navbar'
+import {NavBar, NavBarItem, NavBarGithubItem} from '../components/navbar'
 import './index.sass'
 
 const TemplateWrapper = ({ children, data }) => (
@@ -18,6 +18,7 @@ const TemplateWrapper = ({ children, data }) => (
     />
     <div>
       <NavBar prefix="/en" name={data.site.siteMetadata.name}>
+        <NavBarGithubItem />
         <NavBarItem url="/en/map">Map</NavBarItem>
         <NavBarItem url="/en/data">Data</NavBarItem>
         <NavBarItem url="/en/publications">Publications</NavBarItem>

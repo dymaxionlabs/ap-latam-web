@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import { FaGithub } from 'react-icons/fa';
 import dymLogo from '../assets/dym-logo.png'
 
 const LanguageSelector = props => {
@@ -39,6 +40,17 @@ const NavBarBurger = props => {
 
 const NavBarItem = props => (
   <Link className="navbar-item" to={props.url}>{props.children}</Link>
+)
+
+const NavBarGithubItem = () => (
+  <div className="navbar-item">
+    <p className="control">
+      <a className="button is-light" title="Source code" target="_blank" href="https://github.com/dymaxionlabs/ap-latam">
+        <FaGithub />
+        <span style={{ marginLeft: '0.5em' }}>Código Fuente</span>
+      </a>
+    </p>
+  </div>
 )
 
 const NavBarMenu = props => {
@@ -88,4 +100,8 @@ class NavBar extends React.Component {
   }
 }
 
-export default {NavBar, NavBarItem}
+export default {
+  NavBar,
+  NavBarItem,
+  NavBarGithubItem
+}
