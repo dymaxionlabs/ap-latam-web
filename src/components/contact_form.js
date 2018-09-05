@@ -7,6 +7,23 @@ export class ContactForm extends React.Component {
   constructor(props) {
     super(props)
     this.state = {}
+    this.handleInputChange = this.handleInputChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleInputChange(event) {
+    const target = event.target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const name = target.name;
+
+    this.setState({
+      [name]: value
+    });
+  }
+
+  handleSubmit(event) {
+    event.preventDefault();
+    console.log(`Data submitted: ${JSON.stringify(this.state)}`);
   }
 
   render() {
@@ -19,7 +36,7 @@ export class ContactForm extends React.Component {
           <div className="field-body">
             <div className="field">
               <p className="control is-expanded has-icons-left">
-                <input className="input" type="text" placeholder={this.props.name_pl} value={this.state.name} />
+                <input name="name" className="input" type="text" placeholder={this.props.name_pl} value={this.state.name} onChange={this.handleInputChange} />
                 <span className="icon is-small is-left">
                   <FontAwesomeIcon icon={faUser} />
                 </span>
@@ -27,7 +44,7 @@ export class ContactForm extends React.Component {
             </div>
             <div className="field">
               <p className="control is-expanded has-icons-left has-icons-right">
-                <input className="input" type="email" placeholder={this.props.email_pl} value={this.state.email} />
+                <input name="email" className="input" type="email" placeholder={this.props.email_pl} value={this.state.email} onChange={this.handleInputChange} />
                 <span className="icon is-small is-left">
                   <FontAwesomeIcon icon={faEnvelope} />
                 </span>
@@ -43,7 +60,7 @@ export class ContactForm extends React.Component {
           <div className="field-body">
             <div className="field">
               <p className="control">
-                <input className="input" placeholder={this.props.city_pl} value={this.state.city} />
+                <input name="city" className="input" placeholder={this.props.city_pl} value={this.state.city} onChange={this.handleInputChange} />
               </p>
             </div>
           </div>
@@ -56,7 +73,7 @@ export class ContactForm extends React.Component {
           <div className="field-body">
             <div className="field">
               <div className="control">
-                <textarea className="textarea" placeholder={this.props.message_pl}></textarea>
+                <textarea name="message" className="textarea" placeholder={this.props.message_pl} onChange={this.handleInputChange}></textarea>
               </div>
             </div>
           </div>
@@ -69,7 +86,7 @@ export class ContactForm extends React.Component {
           <div className="field-body">
             <div className="field">
               <div className="control">
-                <button className="button is-primary">
+                <button className="button is-primary" onClick={this.handleSubmit}>
                   {this.props.send_message}
                 </button>
               </div>
