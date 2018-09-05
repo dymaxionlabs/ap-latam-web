@@ -11,6 +11,7 @@ const LanguageSelector = props => {
     'en': 'English',
     'es': 'Español'
   }
+
   return (
     <div className="navbar-item has-dropdown is-hoverable">
       <a className="navbar-link">

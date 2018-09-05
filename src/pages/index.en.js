@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import Footer from './_footer.en'
 import { CityList, CityListItem } from '../components/city_list'
 import { NewsList, NewsListItem } from '../components/news_list'
+import { ContactForm } from '../components/contact_form'
 
 import mapboxLogo from '../assets/mapbox-logo-color.png'
 import techoLogo from '../assets/techo-logo.png'
@@ -36,6 +37,29 @@ const IndexPage = ({ data }) => {
             Click on the name of a city to explore the map.
           </h2>
           <CityList prefix="/en" items={cities} />
+        </div>
+      </section>
+      <section className="section">
+        <div className="container">
+          <h1 className="title">Map your city</h1>
+          <div className="content">
+            <p>
+              Are you interested in mapping informal settlements in your city?
+              Pleave leave us a message.
+            </p>
+            <div className="column is-half">
+              <ContactForm
+                from="Name"
+                name_pl="Name"
+                email_pl="E-mail"
+                city="City"
+                city_pl="City name"
+                message="Message"
+                message_pl="Tell us more about your situation"
+                send_message="Send message"
+              />
+            </div>
+          </div>
         </div>
       </section>
       <section className="section">

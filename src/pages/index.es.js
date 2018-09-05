@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import Footer from './_footer.es'
 import { CityList, CityListItem } from '../components/city_list'
 import { NewsList, NewsListItem } from '../components/news_list'
+import { ContactForm } from '../components/contact_form'
 
 import mapboxLogo from '../assets/mapbox-logo-color.png'
 import techoLogo from '../assets/techo-logo.png'
@@ -38,6 +39,29 @@ const IndexPage = ({ data }) => {
             Haz clic sobre el nombre de una ciudad para explorar el mapa.
           </h2>
           <CityList prefix="/es" items={cities} />
+        </div>
+      </section>
+      <section className="section">
+        <div className="container">
+          <h1 className="title">Mapea tu ciudad</h1>
+          <div className="content">
+            <p>
+              Estás interesado en detectar asentamientos precarios en tu
+              ciudad? Por favor déjanos un mensaje.
+            </p>
+            <div className="column is-half">
+              <ContactForm
+                from="Nombre"
+                name_pl="Nombre"
+                email_pl="E-mail"
+                city="Ciudad"
+                city_pl="Nombre de ciudad"
+                message="Mensaje"
+                message_pl="Cuéntanos más acerca de tu situación"
+                send_message="Enviar mensaje"
+              />
+            </div>
+          </div>
         </div>
       </section>
       <section className="section">
