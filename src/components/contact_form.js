@@ -6,7 +6,12 @@ import { faUser, faEnvelope, faCheck } from '@fortawesome/free-solid-svg-icons'
 export class ContactForm extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {}
+    this.state = {
+      name: '',
+      email: '',
+      city: '',
+      message: '',
+    }
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
