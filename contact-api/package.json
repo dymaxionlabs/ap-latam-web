@@ -9,6 +9,7 @@
   "author": "serverless.com",
   "license": "MIT",
   "devDependencies": {
+    "serverless-dotenv-plugin": "^1.2.0",
     "serverless-google-cloudfunctions": "^1.2.0"
   },
   "dependencies": {
