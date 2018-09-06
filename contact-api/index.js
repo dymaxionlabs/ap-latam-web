@@ -9,7 +9,8 @@ const escape = require('escape-html');
 const api_key  = process.env.API_KEY,
       domain   = process.env.DOMAIN,
       from_who = process.env.FROM_WHO,
-      to_who   = process.env.TO_WHO;
+      to_who   = process.env.TO_WHO,
+      token    = process.env.TOKEN;
 
 const aplatamSendEmail = function aplatamSendEmail(req, res) {
 	console.log('The body is ' + JSON.stringify(req.body));
@@ -19,7 +20,7 @@ const aplatamSendEmail = function aplatamSendEmail(req, res) {
   if (body.message === undefined) {
     // This is an error case, as "message" is required
     res.status(400).send('No message defined!');
-  } else if (body._gotcha !== '') {
+  } else if (body._token !== token) {
     // Honeypot case, in case requester is a spam bot
     res.status(400).send('Invalid request!');
   } else {
