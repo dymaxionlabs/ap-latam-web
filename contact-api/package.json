@@ -12,6 +12,9 @@
     "serverless-google-cloudfunctions": "^1.2.0"
   },
   "dependencies": {
-    "dotenv": "^6.0.0"
+    "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
+    "escape-html": "^1.0.3",
+    "mailgun-js": "^0.20.0"
   }
 }
