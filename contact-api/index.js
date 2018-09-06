@@ -6,7 +6,7 @@ const cors = require('cors');
 const Mailgun = require('mailgun-js');
 const escape = require('escape-html');
 
-const api_key  = process.env.API_KEY,
+const api_key  = process.env.MAILGUN_API_KEY,
       domain   = process.env.DOMAIN,
       from_who = process.env.FROM_WHO,
       to_who   = process.env.TO_WHO,
