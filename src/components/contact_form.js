@@ -2,6 +2,10 @@ import React from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser, faEnvelope, faCheck } from '@fortawesome/free-solid-svg-icons'
+import axios from 'axios'
+
+const ContactFormUrl = process.env.ContactFormUrl
+const ContactFormToken = process.env.ContactFormToken
 
 export class ContactForm extends React.Component {
   constructor(props) {
@@ -12,23 +16,32 @@ export class ContactForm extends React.Component {
       city: '',
       message: '',
     }
-    this.handleInputChange = this.handleInputChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleInputChange = this.handleInputChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   handleInputChange(event) {
-    const target = event.target;
-    const value = target.type === 'checkbox' ? target.checked : target.value;
-    const name = target.name;
+    const target = event.target
+    const value = target.type === 'checkbox' ? target.checked : target.value
+    const name = target.name
 
     this.setState({
       [name]: value
-    });
+    })
   }
 
   handleSubmit(event) {
-    event.preventDefault();
-    console.log(`Data submitted: ${JSON.stringify(this.state)}`);
+    event.preventDefault()
+    console.log(`Data submitted: ${JSON.stringify(this.state)}`)
+
+    const params = { ...this.state, _token: ContactFormToken }
+    axios.post(ContactFormUrl, params)
+      .then(function (response) {
+        console.log(response)
+      })
+      .catch(function (error) {
+        console.log(error)
+      });
   }
 
   render() {
