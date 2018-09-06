@@ -1,0 +1,4 @@
+# Deploy
+
+* Copy `env.sample` into `.env` and set options accordingly.
+* Run `sls deploy`
