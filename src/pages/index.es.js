@@ -59,6 +59,9 @@ const IndexPage = ({ data }) => {
                 message="Mensaje"
                 message_pl="Cuéntanos más acerca de tu situación"
                 send_message="Enviar mensaje"
+                requiredField="This field is required"
+                successMessage="¡Gracias! Nos pondremos en contacto en la brevedad."
+                errorMessage="Ha ocurrido un error. Por favor inténtelo de nuevo más tarde, o envíenos un email."
               />
             </div>
           </div>
