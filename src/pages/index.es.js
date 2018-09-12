@@ -7,6 +7,7 @@ import { ContactForm } from '../components/contact_form'
 
 import mapboxLogo from '../assets/mapbox-logo-color.png'
 import techoLogo from '../assets/techo-logo.png'
+import idbLogo from '../assets/idb-logo-es.png'
 
 const IndexPage = ({ data }) => {
   const cities = data.allCitiesJson.edges.map(v => v.node)
@@ -118,6 +119,11 @@ const IndexPage = ({ data }) => {
               <li>
                 <a href="https://www.techo.org/">
                   <img src={techoLogo} alt="TECHO" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.iadb.org/es">
+                  <img src={idbLogo} alt="BID" />
                 </a>
               </li>
             </ul>
