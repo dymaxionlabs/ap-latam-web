@@ -42,7 +42,7 @@ const IndexPage = ({ data }) => {
           <CityList prefix="/es" items={cities} />
         </div>
       </section>
-      <section className="section">
+      <section id="install" className="section">
         <div className="container">
           <h1 className="title">Mapea tu ciudad</h1>
           <div className="content">
