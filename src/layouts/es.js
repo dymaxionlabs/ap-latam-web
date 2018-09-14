@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import {NavBar, NavBarItem, NavBarGithubItem} from '../components/navbar'
+import ScrollToTop from '../components/scrollToTop'
 import './index.sass'
 
 const TemplateWrapper = ({ children, data }) => (
@@ -26,6 +27,7 @@ const TemplateWrapper = ({ children, data }) => (
         <NavBarItem url="/es/contact">Contacto</NavBarItem>
       </NavBar>
       {children()}
+      <ScrollToTop />
     </div>
   </div>
 )
