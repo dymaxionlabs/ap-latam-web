@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
-import dymLogo from '../assets/dym-logo.png'
+import dymLogo from '../assets/dym-logo-full.png'
 
 const LanguageSelector = props => {
   const langNames = {
@@ -86,10 +86,9 @@ class NavBar extends React.Component {
     return (
       <nav className="navbar" role="navigation" aria-label="main pagination">
         <div className="navbar-brand">
-          <Link style={{ fontWeight: 500 }} className="navbar-item" to={this.props.prefix}>
-            {this.props.name}
-            <img style={{ height: "1.5rem", marginLeft: "0.5rem" }} src={dymLogo} alt="" />
-          </Link>
+          <a className="navbar-item" href="https://dymaxionlabs.com/">
+            <img style={{maxHeight: '2.5rem', padding: 0}} src={dymLogo} alt="" />
+          </a>
           <NavBarBurger
             active={this.state.active}
             handler={this.toggleActive}
