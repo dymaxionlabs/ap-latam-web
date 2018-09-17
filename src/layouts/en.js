@@ -19,6 +19,7 @@ const TemplateWrapper = ({ children, data }) => (
     />
     <div>
       <NavBar prefix="/en" name={data.site.siteMetadata.name}>
+        <NavBarItem url="/en">Home</NavBarItem>
         <NavBarGithubItem>Source code</NavBarGithubItem>
         <NavBarItem url="/en#install">Install</NavBarItem>
         <NavBarItem url="/en/map">Map</NavBarItem>
