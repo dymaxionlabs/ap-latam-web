@@ -31,5 +31,16 @@
          "lon" : -90.51367
       },
       "zoom" : 12
+   },
+   {
+      "internalId": "montevideo",
+      "name" : "Montevideo (preliminar)",
+      "country" : "Uruguay",
+      "path" : "uruguay-montevideo",
+      "center" : {
+         "lat" : -34.901112,
+         "lon" : -56.164532
+      },
+      "zoom" : 12
    }
 ]
