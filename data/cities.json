@@ -38,9 +38,9 @@
       "country" : "Uruguay",
       "path" : "uruguay-montevideo",
       "center" : {
-         "lat" : -34.901112,
-         "lon" : -56.164532
+         "lat" : -34.831474,
+         "lon" : -56.163944
       },
-      "zoom" : 12
+      "zoom" : 11
    }
 ]
