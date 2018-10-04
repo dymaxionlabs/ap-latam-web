@@ -11,6 +11,18 @@ const PublicationsEnPage = () => (
           <ul className="list">
             <li>
               <p>
+                <a href={withPrefix('/docs/AP_Latam_Technical_Report_Q2.pdf')} target="_blank" >
+                  AP Latam Technical Report Q2 - October 2018
+                </a>
+              </p>
+              <p>
+                Technical report about monitoring of informal settlements,
+                applied on the city of Montevideo, Uruguay.
+                Methodology and future work.
+              </p>
+            </li>
+            <li>
+              <p>
                 <a href={withPrefix('/docs/AP_Latam_Technical_Report_Q1.pdf')} target="_blank" >
                   AP Latam Technical Report Q1 - July 2018
                 </a>

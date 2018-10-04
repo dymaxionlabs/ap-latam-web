@@ -11,6 +11,18 @@ const PublicationsEsPage = () => (
           <ul className="list">
             <li>
               <p>
+                <a href={withPrefix('/docs/AP_Latam_Technical_Report_Q2.pdf')} target="_blank" >
+                  AP Latam Technical Report Q2 - October 2018
+                </a>
+              </p>
+              <p>
+                Informe de avance en el monitoreo automático de asentamientos
+                informales, aplicado en la ciudad de Montevideo, Uruguay.
+                Metodología y futuro trabajo.
+              </p>
+            </li>
+            <li>
+              <p>
                 <a href={withPrefix('/docs/AP_Latam_Technical_Report_Q1.pdf')} target="_blank" >
                   AP Latam Technical Report Q1 - July 2018
                 </a>
