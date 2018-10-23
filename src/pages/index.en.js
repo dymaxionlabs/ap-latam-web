@@ -19,7 +19,7 @@ const IndexPage = ({ data }) => {
           <div className="container">
             <h1 className="title is-1">{data.site.siteMetadata.name}</h1>
             <h2 className="subtitle is-4">
-              Monitor of potential slums and informal settlements.
+              Map of potential slums and informal settlements.
             </h2>
             <div className="content">
               <p>
