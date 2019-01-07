@@ -53,5 +53,16 @@
          "lon" : -56.163944
       },
       "zoom" : 11
+   },
+   {
+      "internalId": "peru-lima",
+      "name" : "Lima",
+      "country" : "Perú (preliminary)",
+      "path" : "peru-lima",
+      "center" : {
+         "lat" : -12.046373,
+         "lon" : -77.042755
+      },
+      "zoom" : 12
    }
 ]
