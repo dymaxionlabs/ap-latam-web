@@ -64,5 +64,16 @@
          "lon" : -77.042755
       },
       "zoom" : 12
+   },
+   {
+      "internalId": "argentina-buenos_aires-itati",
+      "name" : "Buenos Aires, Villa Itatí",
+      "country" : "Argentina",
+      "path" : "argentina-bsas-itati",
+      "center" : {
+         "lat" : -34.706283,
+         "lon" : -58.303642
+      },
+      "zoom" : 14
    }
 ]
