@@ -5,8 +5,8 @@ Visit the website at http://dymaxionlabs.com/ap-latam/
 
 ## Install
 
-To build and deploy you need to have Node and npm installed.  After cloning the
-repo, run `yarn` to install all dependencies.
+To build and deploy you need to have Node and yarn installed.  After cloning
+the repo, run `yarn` to install all dependencies.
 
 You have to create a `.env.development` and `.env.production` with the variable
 `MapboxAccessToken` defined in both files.
@@ -17,8 +17,9 @@ For updating Mapbox dataset, you also will need to have installed:
 
 ## Develop
 
-Simply run `npm start` to start the development server. For a production build,
-run `npm run build`.
+Simply run `yarn start` to start the development server. 
+
+For a production build, run `yarn build`.
 
 ### Update datasets
 
