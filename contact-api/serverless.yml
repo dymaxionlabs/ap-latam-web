@@ -2,7 +2,7 @@ service: aplatam-contact # NOTE: Don't put the word "google" in here
 
 provider:
   name: google
-  runtime: nodejs
+  runtime: nodejs10
   project: ${env:PROJECT_ID}
   # the path to the credentials file needs to be absolute
   credentials: ~/.gcloud/keyfile.json
@@ -18,7 +18,7 @@ package:
     - .git/**
 
 functions:
-  aplatamSendEmail:
-    handler: aplatamSendEmail
+  sendEmail:
+    handler: sendEmail
     events:
       - http: path

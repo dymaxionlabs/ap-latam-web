@@ -12,7 +12,7 @@ const api_key  = process.env.MAILGUN_API_KEY,
       to_who   = process.env.TO_WHO,
       token    = process.env.TOKEN;
 
-const aplatamSendEmail = function aplatamSendEmail(req, res) {
+const sendEmail = function(req, res) {
 	console.log('The body is ' + JSON.stringify(req.body));
 
   const body = req.body;
@@ -58,9 +58,9 @@ const aplatamSendEmail = function aplatamSendEmail(req, res) {
   }
 };
 
-exports.aplatamSendEmail = (req, res) => {
+exports.sendEmail = (req, res) => {
   var corsFn = cors();
   corsFn(req, res, function() {
-    aplatamSendEmail(req, res);
+    sendEmail(req, res);
   });
 };
