@@ -160,6 +160,7 @@ export class ContactForm extends React.Component {
         })
       })
       .catch(function (error) {
+        console.error(error);
         that.setState({ showErrorMessage: true })
       })
       .then(() => {
