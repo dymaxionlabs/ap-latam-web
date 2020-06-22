@@ -5,3 +5,11 @@
     `../.env.production`
 
 * Run `sls deploy`
+
+* Run the following lines for making the endpoint public (CORS):
+
+```bash
+gcloud functions add-iam-policy-binding $FUNCTION_NAME --member='allUsers' --role='roles/cloudfunctions.invoker'
+```
+
+where `$FUNCTION_NAME` is the full name of the deployed function.
