@@ -1,7 +1,6 @@
 # AP Latam website
 
 This repository contains the source code for the website of AP Latam.
-Visit the website at http://dymaxionlabs.com/ap-latam/
 
 ## Install
 
